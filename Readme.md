@@ -14,5 +14,19 @@ DYLD_LIBRARY_PATH=/opt/homebrew/Cellar/hdf5/1.14.3/lib/
 HDF5_DIR=/opt/homebrew/Cellar/hdf5/1.14.3/
 ```
 
+## Run
+
+Set up your Rust developement environment and use  
+```
+cargo run --release
+```
+or 
+```
+cargo run --features hdf5_data --no-default-features --release
+```
+for reading the data in the HDF5 file.
+
+This is only tested on a Apple M2 Macbook Air.
+
 Jason Chin
 - Dec. 23, 2023
