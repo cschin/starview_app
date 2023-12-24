@@ -8,11 +8,11 @@ async fn main() {
 use anyhow::Result;
 use fxhash::FxHashMap;
 
+#[cfg(feature = "csv_data")]
+use csv;
 #[cfg(feature = "hdf5_data")]
 use hdf5;
 use std::path::Path;
-#[cfg(feature = "csv_data")]
-use csv;
 
 use std::io::{BufRead, BufReader};
 
